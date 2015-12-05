@@ -60,7 +60,7 @@ def get_interp2d_spl_to_loudness(isStrict=True):
 		prepared_spl_to_loudness = prepared_spl_to_loudness_approx
 
 	if prepared_spl_to_loudness is None:
-		print 'datapoints was none.'
+		
 		# z-axis value for 2-d interpolator. 
 		prepared_spl_to_loudness = np.zeros((len(spl_array), len(freq_array)))
 				
@@ -72,8 +72,7 @@ def get_interp2d_spl_to_loudness(isStrict=True):
 			for spl_ind, spl_val in enumerate(spl_array):
 				prepared_spl_to_loudness[spl_ind, :] = spl_to_loudness(spl_val, freqs=freq_array, iso_const=iso226const_extended)
 			prepared_spl_to_loudness_approx = prepared_spl_to_loudness
-	else:
-		print 'datapoints was NOT none.'
+	
 	
 	"""
 	ret = np.zeros(spls.shape)

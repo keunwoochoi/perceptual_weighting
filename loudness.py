@@ -12,7 +12,7 @@ from constants import *
 iso226const = iso226.ISO226Const()
 
 class ISO226_Converter:
-	def __init__(self, freqs, isStrict=True):
+	def __init__(self, freqs, isStrict=False):
 		"""It requires for which frequencies you need to convert.
 		For example, if you want to use it with 512-point STFT at 44100 Hz,
 		freqs should be range(0, 44100/2, 44100/(512/2))+[44100/2]
@@ -41,13 +41,14 @@ class ISO226_Converter:
 
 	def convert_s2l(self, spl_arrays):
 		"""
+		Convert SPL --> Loudness 
 		spl_arrays : N-by-M np array, where N == len(self.freqs) == number of frequency band.
 											M == number of frame
 		return: weighted spectrogram
 		"""
 		ret = np.zeros(spl_arrays.shape)
 		for i_freq, spl_vals in enumerate(spl_arrays): # enumerate for each frequency band
-			print "For spl values of", spl_vals, "at freq ind", i_freq, self.freqs[i_freq], 'hz.'
+			# print "For spl values of", spl_vals, "at freq ind", i_freq, self.freqs[i_freq], 'hz.'
 			ret[i_freq, :]=self.interp1d_s2l_functions[i_freq](spl_vals)
 		return ret
 
