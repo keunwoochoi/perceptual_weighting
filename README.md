@@ -11,8 +11,10 @@ Please feel free to suggest me further upgrade!
 
 # Usage
 As in the example.py,
-` import loudness
+```
+import loudness
 converter = loudness.ISO226_Converter(freqs, isStrict=False)
 S_weighted = converter.convert_s2l(S)
+```
 
 
