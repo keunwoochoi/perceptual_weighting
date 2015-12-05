@@ -5,7 +5,7 @@ pat, PsychoAcousticsToolbox for python, is my new project for a convenient compu
 
 Further functionality would be computing masking curve and other (pseudo) perceptual weighting such as A-weighting. 
 
-At some moment I'll wrap it into a form of python package to make it easier to install and manage.
+At some moment I'll wrap it into a form of python package to make it easier to install and manage.... or I'll change the name to more humble one. 
 
 Please feel free to suggest me further upgrade!
 
