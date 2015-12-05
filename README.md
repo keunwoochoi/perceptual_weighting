@@ -12,9 +12,18 @@ Please feel free to suggest me further upgrade!
 # Usage
 As in the example.py,
 ```
+# some constants
+sr = 44100
+n_fft = 1024
+bin_width = float(sr)/n_fft
+freqs = [0.0] + [(i+1)*bin_width for i in xrange(0,n_fft/2)] # important!
+freqs = np.array(freqs)
+
+S = np.load('data/spectrogram.npy')
+
 import loudness
-converter = loudness.ISO226_Converter(freqs, isStrict=False)
-S_weighted = converter.convert_s2l(S)
+converter = loudness.ISO226_Converter(freqs, isStrict=False) # initiate a converter object for the frequency bands
+S_weighted = converter.convert_s2l(S) # convert the spectrogram.
 ```
 
 
