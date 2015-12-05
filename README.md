@@ -1,7 +1,9 @@
 # PsychoAcousticsToolbox
 by Keunwoo Choi (keunwoo.choi@qmul.ac.uk)
 
-pat, PsychoAcousticsToolbox for python, is my new project for a convenient computation of loudness given time-frequency representation. Basically, the goal is to bridge between psychoacoustics (based on sound) and signal processing (based on signal/data).
+What does it do?
+You can get perceptually weighted time-frequency representation in a much more correct way than A-weighting.
+(At the moment, the toolbox is very small. This is it!)
 
 Further functionality would be computing masking curve and other (pseudo) perceptual weighting such as A-weighting. 
 
