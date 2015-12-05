@@ -8,3 +8,11 @@ Further functionality would be computing masking curve and other (pseudo) percep
 At some moment I'll wrap it into a form of python package to make it easier to install and manage.
 
 Please feel free to suggest me further upgrade!
+
+# Usage
+As in the example.py,
+` import loudness
+converter = loudness.ISO226_Converter(freqs, isStrict=False)
+S_weighted = converter.convert_s2l(S)
+
+
