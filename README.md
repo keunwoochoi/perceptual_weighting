@@ -22,7 +22,7 @@ freqs = np.array(freqs)
 
 S = np.load('data/spectrogram.npy')
 ```
-then,
+* conversion
 ```
 import loudness
 converter = loudness.ISO226_Converter(freqs, isStrict=False) # initiate a converter object for the frequency bands
