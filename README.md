@@ -5,9 +5,7 @@ What does it do?
 * loudness.py: You can get perceptually weighted time-frequency representation in a much more correct way than A-weighting.
 * basic_weightings.py: You can add A-, B-, C-, and D-weighting to your TF-representation.
 
-Further functionality would be computing masking curve and other (pseudo) perceptual weighting such as A-weighting. 
-
-At some moment I'll wrap it into a form of python package to make it easier to install and manage.... or I'll change the name to more humble one. 
+You see the results in the included png files.
 
 Please feel free to suggest me further upgrade!
 
