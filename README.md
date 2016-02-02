@@ -32,4 +32,8 @@ converter = loudness.ISO226_Converter(freqs, isStrict=False) # initiate a conver
 S_weighted = converter.convert_s2l(S) # convert the spectrogram.
 ```
 
+# plan
+
+- masking curve
+- gammatone filterbank
 
