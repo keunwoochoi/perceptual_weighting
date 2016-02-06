@@ -1,4 +1,5 @@
-# PsychoAcousticsToolbox
+# pat
+pat is a psyacoustic toolbox and now supports loudness compensation for time-frequency representation.
 by Keunwoo Choi (keunwoo.choi@qmul.ac.uk)
 
 # What does it do?
