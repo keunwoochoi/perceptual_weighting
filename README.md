@@ -1,5 +1,5 @@
-# pat
-pat is a psyacoustic toolbox and now supports loudness compensation for time-frequency representation.
+# perceptual_weighting
+perceptual_weighting: loudness compensation for time-frequency representation.
 by Keunwoo Choi (keunwoo.choi@qmul.ac.uk)
 
 # What does it do?
@@ -32,9 +32,3 @@ import loudness
 converter = loudness.ISO226_Converter(freqs, isStrict=False) # initiate a converter object for the frequency bands
 S_weighted = converter.convert_s2l(S) # convert the spectrogram.
 ```
-
-# plan
-
-- masking curve
-- gammatone filterbank
-
