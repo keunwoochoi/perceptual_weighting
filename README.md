@@ -16,7 +16,7 @@ Please feel free to suggest me further upgrade!
 # Usage
 As in the example.py.
 * preparation
-```
+```python
 # some constants
 sr = 44100
 n_fft = 1024
@@ -27,7 +27,7 @@ freqs = np.array(freqs)
 S = np.load('data/spectrogram.npy')
 ```
 * conversion
-```
+```python
 import loudness
 converter = loudness.ISO226_Converter(freqs, isStrict=False) # initiate a converter object for the frequency bands
 S_weighted = converter.convert_s2l(S) # convert the spectrogram.
